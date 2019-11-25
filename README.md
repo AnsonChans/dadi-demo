@@ -21,3 +21,6 @@
 ## 可拓展
 - react-router路由
 - Axios+mock拦截数据
+
+## 效果图
+![效果图](https://github.com/AnsonChans/dadi-demo/blob/master/result.png)
