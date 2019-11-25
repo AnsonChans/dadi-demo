@@ -1,0 +1,19 @@
+
+@import "antd-cover";
+
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1 !important;
+    font-family:-apple-system, 'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif !important;
+    overflow: hidden;
+    p,h1,h2,h3,h4,h5,h6{
+        margin: 0
+    }
+}
+
+#app{
+    width: 100%;
+    height:100%;
+}

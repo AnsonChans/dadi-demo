@@ -1,0 +1,101 @@
+.homeBody {
+  height: calc(100% - 44px);
+  .recomendBox {
+    height: 214px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transition: all linear 0.8s;
+    .recomendTitle {
+      padding: 20px 0 20px 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .recomendContent {
+      display: flex;
+      width: 100%;
+      padding-bottom: 20px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      .recomendItem {
+        width: 75px;
+        margin-left: 15px;
+        img {
+          width: 75px;
+          height: 75px;
+          border-radius: 20px;
+        }
+        .item-name,
+        .item-subName {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .item-name {
+          height: 28px;
+          font-size: 14px;
+          color: #222;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+        .item-subName {
+          height: 24px;
+          font-size: 12px;
+          color: #555;
+        }
+      }
+    }
+  }
+  .hide-top {
+    transform: translateY(-300px) scale(0.5);
+    opacity: 0.25;
+  }
+  .move-top {
+    transform: translateY(-214px);
+  }
+  .appListBox {
+    overflow: auto;
+    transition: all linear 0.57s;
+    .appList-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding: 10px 15px 10px 0;
+      border-bottom: 1px solid #ddd;
+      .item-idx {
+        width: 40px;
+        font-size: 18px;
+        color: #555;
+        padding-left: 15px;
+      }
+      .item-img {
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+        > img {
+          border-radius: 50%;
+        }
+      }
+      .item-msg {
+        min-height: 75px;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        flex: 1;
+        .msg-name {
+          font-size: 14px;
+        }
+        .msg-type {
+          font-size: 12px;
+          color: #555;
+          margin-top: 5px;
+        }
+      }
+    }
+    .appList-item:nth-child(even) {
+      .item-img > img {
+        border-radius: 20px;
+      }
+    }
+  }
+}
